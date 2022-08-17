@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker { 
-        image 'python:3.10.1-alpine' 
+        image 'cozero/linter-python3-pylint:latest' 
         }
   }
   
