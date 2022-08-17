@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Install Requirements'){
             steps{
-            sh "apt install python3 python3-pip"
+            sh "sudo apt install python3 python3-pip"
             echo 'Done'
             }
         }
