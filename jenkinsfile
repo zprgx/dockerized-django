@@ -4,7 +4,7 @@ pipeline {
  stages {
      stage('Checkout') {
             steps {
-                git credentialsId: 'github-jenkins', url: 'https://github.com/jagadish12/funniest.git'
+                git credentialsId: 'jenkins', url: 'https://github.com/zprgx/dockerized-django.git'
                 echo 'CheckOut Success'
             }
         }
