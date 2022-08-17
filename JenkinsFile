@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker { 
-        image 'cozero/linter-python3-pylint:latest' 
+        image 'cytopia/pylint:latest'
         }
   }
   
