@@ -2,6 +2,7 @@ FROM python:3.6-alpine
 
 RUN apk --update add \
     build-base \
+    git \
     postgresql \
     postgresql-dev \
     libpq \
