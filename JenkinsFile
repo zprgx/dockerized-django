@@ -1,10 +1,8 @@
-pipeline {
-  agent { dockerfile true }
- stages {
-    stage('Test') {
-            steps {
-                sh 'python3 -V'
-            }
- }
-}
+node {
+    checkout scm
+    def testImage = docker.build("test-image") 
+
+    testImage.inside {
+        sh 'python3 -V'
+    }
 }
