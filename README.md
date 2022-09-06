@@ -8,7 +8,7 @@ Sample project on how to dockerize your Django project in development and produc
 ## Development
 - Clone project
 - Create *.env* and *.env.secret* from the example files in the root folder and edit as appropriate
-- Run `docker-compose up`
+- Run `docker-compose up` 
 - Visit localhost:8000
 
 ## Production
